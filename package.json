@@ -1,0 +1,8 @@
+{
+  "name": "betterbw", "version": "1.0.0", "private": true,
+  "description": "A streamlined terminal interface for the Bitwarden CLI",
+  "bin": {"betterbw": "bin/betterbw.mjs"},
+  "scripts": {"start": "node bin/betterbw.mjs", "test": "node --test test/*.test.cjs", "check": "node --check bin/betterbw.mjs && node --check lib/vault.cjs"},
+  "dependencies": {"@inquirer/prompts": "^8.0.0"},
+  "engines": {"node": ">=22"}
+}
